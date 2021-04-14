@@ -11,3 +11,26 @@ interface `IMovingAverageCalculator`.
 
 Example implementation `MovingAverageCalculator` needs size of the moving window (number of items for 
 moving average - N), and calculates simple moving average.
+
+For demonstration, sample code is added in Main.java:
+
+```java
+MovingAverageContainer mvg = new MovingAverageContainer(new MovingAverageCalculator(5));
+        mvg.add(4.0);
+        mvg.add(4.0);
+        mvg.add(4.0);
+        mvg.add(4.0);
+        mvg.add(4.0);
+        mvg.add(6.0);
+        mvg.add(7.0);
+        mvg.add(8.0);
+
+        for( int i = 0; i < mvg.size(); i++){
+            StringBuilder str = new StringBuilder()
+                    .append(mvg.get(i))
+                    .append(" ")
+                    .append(mvg.getMovingAverage(i));
+            System.out.println(str);
+        }
+        System.out.println(mvg.getMovingAverage());
+```
