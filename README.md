@@ -34,3 +34,18 @@ MovingAverageContainer mvg = new MovingAverageContainer(new MovingAverageCalcula
         }
         System.out.println(mvg.getMovingAverage());
 ```
+
+And, the expected output is:
+
+```
+4.0 4.0
+4.0 4.0
+4.0 4.0
+4.0 4.0
+4.0 4.0
+6.0 4.4
+7.0 5.0
+8.0 5.8
+5.8
+```
+
