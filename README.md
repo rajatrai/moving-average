@@ -1,8 +1,9 @@
 # moving-average
 
+Interface and example implementation for Moving Average
 
 The solution separates the storage of items( and their corresponding moving average), 
-and the calculation logic in two separate interfaces. Both concrete implementations can be independent of 
+and the calculation logic in two separate interfaces. Concrete implementations can be independent of 
 each other.
 
 The example implementation `MovingAverageContainer` uses ArrayList<> for storage of items and the corresponding moving
